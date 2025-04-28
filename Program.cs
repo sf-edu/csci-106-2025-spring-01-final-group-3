@@ -4,7 +4,9 @@ class Program
 {
     static async Task MainAsync()
     {
-        Console.Write("Please enter a stock you would like to track: ");
+        Console.WriteLine("Welcome to the Stock Tracker!");
+        Console.WriteLine("");
+        Console.Write("To get started, enter the stock you would like to track: ");
         var ticker = Console.ReadLine().ToUpper();
         // You could query multiple symbols with multiple fields through the following steps:
         var securities = await Yahoo
